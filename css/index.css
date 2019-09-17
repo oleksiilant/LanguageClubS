@@ -1,0 +1,179 @@
+#carouselOffers {
+    height: 500px;
+}
+
+#carouselOffers img {
+    max-height: 450px;
+}
+
+.intro {
+    max-width: 400px;
+    margin-top: 150px;
+    text-align: center;
+}
+.card {
+    height: 100%;
+}
+
+.alert {
+    position: fixed;
+    top: 50px;
+    width: 50%;
+    left: 25%;
+    z-index: 1051;
+}
+
+.btn {
+    padding: 0.75rem 0.7rem;
+}
+body{text-align: center; }
+body img {
+    display:block;
+    width: 30%;
+    float: left;
+}
+
+
+.onebody{
+    max-width: 810px;
+    margin: auto;
+    padding:10px;
+}
+
+header img {
+    display:block;
+    width: 50%;
+    float: left;
+}
+@media screen and (max-width: 700px) {
+  header img {
+    display:block;
+    width: 100%;
+  }
+}
+header h2{
+    text-align: center;
+}
+
+main img{
+    display:block;
+    width: 100%;
+    float:center;
+}
+main {
+    text-align: center;
+}
+
+.menu-buttons{
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    border: 2px solid rgb(252, 254, 255);
+    border-radius: 20px 20px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+main .product img {
+    width: 100%;
+    display: block;
+}
+
+main .product .product-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 600px) {
+   main .product-list {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 5px;
+   }
+}
+
+.menu-buttons a {
+    color: rgb(10, 8, 8);
+    padding: 20px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    font: normal 25px arial;
+    transition: all 2.0s;
+}
+
+.menu-buttons a:hover {
+    border-radius: 20px 20px;
+    background-color: rgb(119, 133, 255);
+}
+
+.footer #icon{
+    text-align: center;
+}
+.footer #icon {
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+.topnav {
+  overflow: auto;
+  background-color:  rgb(105, 162, 219);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #0c0b0b;
+  text-align: center;
+  padding: 11px 25px;
+  text-decoration: none;
+  font-size: 18px;
+
+}
+
+.topnav a:hover {
+  background-color: rgb(227, 234, 241);
+  color: black;
+  text-decoration: none;
+}
+
+.topnav a.active {
+  background-color:    rgb(105, 162, 219);
+  color: auto;
+  padding: 0px;
+  margin: 0%;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+}
+
+
+
+
