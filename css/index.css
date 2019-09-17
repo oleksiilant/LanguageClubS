@@ -13,6 +13,7 @@
 }
 .card {
     height: 100%;
+    width: 100%;
 }
 
 .alert {
@@ -33,11 +34,15 @@ body img {
     float: left;
 }
 
+.text-golovna{
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    margin: 15px;
 
+}
 .onebody{
-    max-width: 810px;
+    max-width: 800px;
     margin: auto;
-    padding:10px;
+    padding:0px;
 }
 
 header img {
@@ -94,22 +99,22 @@ main .product .product-buttons {
    }
 }
 
-.menu-buttons a {
+/*.menu-buttons a {
     color: rgb(10, 8, 8);
-    padding: 20px 20px;
+    padding: 18px 18px;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
     width: 50%;
     text-align: center;
-    font: normal 25px arial;
+    font: normal 24px arial;
     transition: all 2.0s;
 }
 
 .menu-buttons a:hover {
     border-radius: 20px 20px;
     background-color: rgb(119, 133, 255);
-}
+}*/
 
 .footer #icon{
     text-align: center;
@@ -121,7 +126,7 @@ main .product .product-buttons {
 }
 .topnav {
   overflow: auto;
-  background-color:  rgb(105, 162, 219);
+  background-color:  rgb(255, 255, 255);
 }
 
 .topnav a {
@@ -131,18 +136,19 @@ main .product .product-buttons {
   text-align: center;
   padding: 11px 25px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
 
 }
 
 .topnav a:hover {
-  background-color: rgb(227, 234, 241);
+  background-color: rgb(105, 162, 219);
   color: black;
   text-decoration: none;
+  border-radius: 13px;
 }
 
 .topnav a.active {
-  background-color:    rgb(105, 162, 219);
+  background-color:    rgb(163, 174, 185);
   color: auto;
   padding: 0px;
   margin: 0%;
@@ -174,6 +180,32 @@ main .product .product-buttons {
   }
 }
 
+.button {
 
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition: 0s;
+  cursor: pointer;
+}
+.button2 {
+  background-color: white;
+  color: black;
 
+}
 
+.button2:hover {
+  background-color: rgb(105, 162, 219);;
+  color: black;
+  border-radius: 13px;
+}
+
+.card{
+
+}
