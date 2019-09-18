@@ -7,8 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LvivLanguageClub</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    
     <link rel="stylesheet" href="css/index.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://bootstraptema.ru/snippets/form/2017/recaptcha/custom.css' rel='stylesheet' type='text/css'>
+
 </head>
    <body class="onebody">
         <header>
@@ -41,55 +44,60 @@
             </script>
         </nav>
     <main >
+<hr>
+ <p>CПОВІСТІТЬ НАС ПРО ПРОБЛЕМИ, ПИТАННЯ ТА ПРОПОЗИЦІЇ ЗА ДОПОМОГОЮ ФОРМИ ЗВОРОТНЬОГО ЗВ'ЯЗКУ</p>
 
-    <br>
-<div class="container">
-<div class="row">
-<div class="col-md-8"> </div>
-<div class="col-md-8">
-   <h4>9</h4>
-   <form action="./mail.php" method="post">
-<div class="form-group">
-   <label for="name">Ваше имя:</label>
-   <input type="name" name="name" class="form-control" id="name" placeholder="Name">
+<div class="contact-container">
+    <div class="row">
+        <div class="col-lg-12 col-lg-offset-1">
+            <h4 class="text-left"><u>зворотній зв'язок</u></h4>
+            <p class="lead"></p>
+            <form id="contact-form" method="post" action="https://formspree.io/leshalan@gmail.com" role="form">
+                <div class="messages"></div>
+                <div class="controls">
+                    <div class="row">
+                    <div class="col-md-10">
+                            <div class="form-group">
+                                <label for="form_lastname">Прізвище та ім'я</label>
+                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Заповніть ім'я та прізвище" required="required" data-error="Поле необхідно заповнити.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <label for="form_email">Електронна адреса</label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Заповніть електронну адресу" required="required" data-error="Поле необхідно заповнити.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <label for="form_message">Пропозиції</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Задайте питання тут" rows="6" required="required" data-error="Поле необхідно заповнити. Опис клубу буде додано до картки."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="submit" class="btn btn-success btn-send" value="ВІДПРАВИТИ">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
-<div class="form-group">
-   <label for="email1">E-mail:</label>
-   <input type="email" name="email" class="form-control" id="email1" placeholder="Email">
-</div>
-<div class="form-group">
-   <label for="phone">Номер телефона:</label>
-   <input type="phone" name="phone" class="form-control" id="phone" placeholder="Phone">
-</div>
-<div class="form-group">
-   <label for="message">Сообщение:</label>
-   <textarea class="form-control" name="message" rows="3"></textarea>
-</div>
-   <button type="submit" class="btn btn-info">Отправить сообщение</button>
-</form>
-</div>
-<div class="col-md-"> </div> </div>
-</div>
-
+<br>
+<h6><u>ПІДТРИМАЙТЕ НАШ ПРОЕКТ</u>
+<input type="image" src="img/OMNIC.jpg" name="twitter" alt="twitter" width="300" height="300"><h6>
         <p><p>ЗВЯЗАТИСЬ З НАМИ</p></p>
        <p>+38(097)4212345</p>
        <p>+38(050)4212345</p>
-       <p>Сповістіть нас про проблеми, питання та пропозиції за  допомогою листа на адресу
-          <a id="mail" href="contacts.html">languageclublviv@gmail.com</a>
-       </p>
-УкраЇна, м. Львів,
-вул., Братів Рогатинців, 12, оф. 2.
-  </p>
-<form method="POST" action="https://formspree.io/leshalan@gmail.com">
-    <label>Ім'я<input type="text" name="Aemail"></label>
-    <label for="Aemail">Електронна адреса</label>
-    <input id="Aemail" type="email" name="Aemail">
-    <br>
-    <div>
-        <textarea name="message" placeholder="Повідомлення"></textarea>
-    </div>
-    <button type="submit">Надіслати</button>
-</form>
+
+<p> м. Львів,<br>
+вул., Братів Рогатинців, 12, оф. 2.</p><br>
+
 </main>
 <footer>
            <div class="footer">
