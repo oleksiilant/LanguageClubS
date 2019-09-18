@@ -101,23 +101,6 @@ main .product .product-buttons {
    }
 }
 
-/*.menu-buttons a {
-    color: rgb(10, 8, 8);
-    padding: 18px 18px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    width: 50%;
-    text-align: center;
-    font: normal 24px arial;
-    transition: all 2.0s;
-}
-
-.menu-buttons a:hover {
-    border-radius: 20px 20px;
-    background-color: rgb(119, 133, 255);
-}*/
-
 .footer #icon{
     text-align: center;
 }
@@ -229,3 +212,40 @@ h6 {
   }
 }
 
+
+section button{
+    border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition: 0s;
+  cursor: pointer;
+  border-radius: 13px;
+}
+section button:hover{
+    background-color: rgb(105, 162, 219);;
+  color: black;
+  border-radius: 13px;
+}
+
+.dodatu{
+  display: flex;
+  justify-content: center;
+  color: #0c0b0b;
+  text-align: center;
+  padding: 11px 25px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.dodatu:hover{
+    background-color: rgb(105, 162, 219);
+  color: black;
+  text-decoration: none;
+  border-radius: 13px;
+}

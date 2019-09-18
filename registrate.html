@@ -1,78 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Language Club Lviv</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body id="man">
-    <header>
-         <body id="man">
-        <header>
-            <img src="img/logo.jpg" alt="Lviv Language Club">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>LvivLanguageClub</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='https://bootstraptema.ru/snippets/form/2017/recaptcha/custom.css' rel='stylesheet' type='text/css'>
+    </head>
+        <body class="onebody">
+            <header>
+                <img src="img/logo.jpg" alt="Lviv Language Club">
+                <br>
+                <a href="contacts.html">
+                    <i>languageclublviv@gmail.com</i>
+                </a>
+            </header>
+            <h2>Львівський мовний клуб</h2>
             <nav>
-                <ul id="navbar">
-                    <li>
-                        <a href="index.html">ГОЛОВНА</a>
-                    </li>
-                    <li>
-                        <a href="clubs.html">КЛУБИ</a>
-                    </li>
-                    <li>
-                        <a href="contacts.html">КОНТАКТИ</a>
-                    </li>
-                </ul>
-            </nav>
-    </header>
-
-     <main>
- <h1>РЕЄСТРАЦІЯ</h1>
-    <form method="POST" action="https://formspree.io/leshalan@gmail.com">
-        <label>Ім'я<input type="text" name="Aemail"></label>
-        <br>
-        <label for="Aemail">Електронна адреса</label>
-        <input id="Aemail" type="email" name="Aemail">
-        <br>
-        <label>Стать</label>
-        <br>
-        <label>
-            <input type="radio" name="gender" value="male">Чоловік
-        </label>
-        <label>
-            <input type="radio" name="gender" value="female">Жінка
-        </label>
-        <label>
-            <input type="radio" name="gender" value="other">Інше
-        </label>
-        <br>
-        <label>Пароль<input type="text" name="text"></label>
-        <br>
-        <label>Підтвердити пароль<input type="text" name="text"></label>
-        <br>
-        <p>Завантажити фото<input type="file" name="photo"></p>
-        <br>
-        <button type="submit">Надіслати</button>
-    </form>
-<button class="first">Title Only</button>
-<button class="second">Title and Text</button>
-<button class="third">Title, Text and Icon</button>
-
-
-
-   <p id="icon">
-  <input type="image" src="img/twitter-icon.png" name="twitter" alt="twitter" width="30" height="30">
-  <input type="image" src="img/instagram-icon.png" name="twitter" alt="instagram" width="30" height="30">
-  <input type="image" src="img/linkedin-icon.jpg" name="twitter" alt="linkedin" width="30" height="30">
-  <input type="image" src="img/facebook-icon.jpg" name="twitter" alt="facebook" width="30" height="30"></p>
- &copy; 2019 oleksiilantfactory
-  </div>
-   </footer>
-   <script defer src="js/index.js"></script>
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
-</html>
+                <div class="topnav" id="myTopnav">
+                    <a href="#home" class="active"></a>
+                    <a href="index.html">ГОЛОВНА</a>
+                    <a href="clubs.html">КЛУБИ</a>
+                    <a href="contacts.html">КОНТАКТИ</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <p>
+                <h6>Спілкуйся, дружи, розвивайся!</h6>
+</p><script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-2">
+            <h1 class="text-center"></h1>
+            <p class="lead"></p>
+            <form id="contact-form" method="post" action="https://formspree.io/leshalan@gmail.com" role="form">
+                <div class="messages"></div>
+                <div class="controls">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label for="form_name">Назва клубу</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Заповніть назву клубу" required="required" data-error="Поле необхідно заповнити.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label for="form_lastname">Організатор</label>
+                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Заповніть ім'я та прізвище організатора" required="required" data-error="Поле необхідно заповнити.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label for="form_email">Електронна адреса</label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Заповніть електронну адресу*" required="required" data-error="Поле необхідно заповнити.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label for="form_phone">Номер телефону</label>
+                                <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Поле необхідно заповнити.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <label for="form_message">Опис клубу</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Опищіть діяльність клубу*" rows="6" required="required" data-error="Поле необхідно заповнити. Опис клубу буде додано до картки."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <input type="submit" class="btn btn-success btn-send" value="ВІДПРАВИТИ ЗАЯВКУ">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- /.col-lg-8 col-lg-offset-2 -->
+    </div>
+    <!-- /.row-->
+</div>
+<!-- /.container-->
+<div class="footer">
+    <p id="icon">
+        <a href="https://twitter.com/">
+            <input type="image" src="img/twitter-icon.png" name="twitter" alt="twitter" width="45" height="45">
+        </a>
+        <a href="https://www.instagram.com/">
+            <input type="image" src="img/instagram-icon.png" name="instagram" alt="instagram" width="45" height="45">
+        </a>
+        <a href="https://www.linkedin.com">
+            <input type="image" src="img/linkid.png" name="twitter" alt="linkedin" width="45" height="45">
+        </a>
+        <a href="https://www.facebook.com">
+            <input type="image" src="img/fb.png" name="twitter" alt="facebook" width="45" height="45">
+        </a>
+    </p>
+    <p>&copy;2019 oleksiilantfactory</p>
+</div>
+</footer><script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="https://bootstraptema.ru/snippets/form/2017/recaptcha/validator.js"></script>
+<script src="https://bootstraptema.ru/snippets/form/2017/recaptcha/contact.js"></script>
+</body></html>
