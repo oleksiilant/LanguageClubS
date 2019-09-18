@@ -193,7 +193,7 @@ main .product .product-buttons {
   text-decoration: none;
 }
 
-h6 {
+h3 {
   animation-duration: 3s;
   animation-name: slidein;
 }
@@ -209,7 +209,9 @@ h6 {
     width: 100%;
   }
 }
-
+ h4{
+     font-family: system-ui;
+ }
 
 section button{
   border: none;
@@ -250,9 +252,8 @@ section button:hover{
   border-radius: 13px;
 }
 .container{
-    float: ;
     display: block;
-  text-align: left;;
+  text-align: center;
 }
 .contact-container{
     float:left ;
@@ -261,4 +262,3 @@ section button:hover{
   position: relative;
 }
 
-}
